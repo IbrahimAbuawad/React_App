@@ -5,9 +5,9 @@ class Header extends React.Component {
     render() {
 
         return (
-            <div>
-                <h1>My First App</h1>
-            </div>
+            <header>
+                <h1>My First App </h1>
+            </header>
         );
 
     }
