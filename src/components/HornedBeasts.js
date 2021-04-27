@@ -22,7 +22,8 @@ class HornedBeast extends React.Component {
 
     returnBeast = ()=>{
 
-        return <SelectedBeast/>;
+   this.props.giveMeModal()
+        
     }
     render() {
 
@@ -45,6 +46,7 @@ class HornedBeast extends React.Component {
                 </Card>
 
 
+             <SelectedBeast/>
             </div>
         );
 
