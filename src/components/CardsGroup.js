@@ -24,7 +24,7 @@ class CardsGroup extends React.Component {
 
         return this.state.data.map(element => {
             return <HornedBeast
-
+            
                 title={element.title}
                 imgUrl={element.image_url}
                 disc={element.description}

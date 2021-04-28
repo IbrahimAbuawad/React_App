@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import SelectedBeast from './SelectedBeast';
 class HornedBeast extends React.Component {
 
     constructor(props) {
@@ -18,12 +19,18 @@ class HornedBeast extends React.Component {
             }
         )
     }
+
+    returnBeast = ()=>{
+
+   this.props.giveMeModal()
+        
+    }
     render() {
 
         return (
             <div>
 
-                <Card style={{ width: '18rem' }} class='card'>
+                <Card style={{ width: '18rem' }} class='card' onClick={this.returnBeast}>
                     <Card.Img variant="top" src={this.props.imgUrl} onClick={this.increasePatsNum} alt={this.props.title} title={this.props.title} />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
@@ -39,6 +46,7 @@ class HornedBeast extends React.Component {
                 </Card>
 
 
+             <SelectedBeast/>
             </div>
         );
 
