@@ -3,8 +3,8 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 class HornedBeast extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             numberOfPats: 0
         }
@@ -20,7 +20,7 @@ class HornedBeast extends React.Component {
     }
 
     showTheModal = ()=>{
-        this.props.show()
+        this.props.show(this.props)
     }
 
     render() {

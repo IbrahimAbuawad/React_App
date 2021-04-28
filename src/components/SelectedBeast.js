@@ -12,11 +12,11 @@ class SelectedBeast extends React.Component {
 
         return <Modal show={this.props.showMyModal} onHide={this.props.notShow} >
         <Modal.Header closeButton>
-          <Modal.Title>{this.props.title}</Modal.Title>
+          <Modal.Title>{this.props.hornedInfo.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body><img variant="top" src={this.props.imgUrl}  alt={this.props.title} title={this.props.title} />  
+        <Modal.Body><img variant="top" src={this.props.hornedInfo.imgUrl}  alt={this.props.hornedInfo.title} title={this.props.hornedInfo.title} />  
         
-        <h1>{this.props.disc}</h1>
+        <h5>{this.props.hornedInfo.disc}</h5>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.props.notShow}>

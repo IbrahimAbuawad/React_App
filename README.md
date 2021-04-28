@@ -82,7 +82,7 @@ Actual time needed to complete: 1 hour
 ```
 
 ```
-Number and name of feature: Feature #1: Feature #2: Allow users to vote for their favorite beast
+Number and name of feature: Feature #2: Allow users to vote for their favorite beast
 
 Estimate of time needed to complete: 2 hour
 
@@ -94,7 +94,7 @@ Actual time needed to complete: 2 hour
 ```
 
 ```
-Number and name of feature: Feature #1: Feature 3: Bootstrap
+Number and name of feature:Feature 3: Bootstrap
 
 Estimate of time needed to complete: half hour
 
@@ -103,4 +103,15 @@ Start time: 12 AM
 Finish time: 12:30 AM
 
 Actual time needed to complete: half hour
+```
+```
+Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 1 days
+
+Start time: 12 AM
+
+Finish time: 12:30 PM
+
+Actual time needed to complete:  1 days
 ```
