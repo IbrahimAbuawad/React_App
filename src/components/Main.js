@@ -13,7 +13,7 @@ class Main extends React.Component {
 
         return <>
             <CardGroup id='cardGroup'>
-                <CardsGroup jsonData1={this.props.jsonData1} show={this.props.showFunc} />
+                <CardsGroup jsonData1={this.props.jsonData1} show={this.props.showFunc}  />
             </CardGroup>
         </>
     }

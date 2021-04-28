@@ -12,25 +12,32 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        data: jsonData,
-        show: false
+      data: jsonData,
+      show: false,
+      getInfo: {}
     };
-}
+  }
 
 
 
-handleModel = () => {
+  handleModel = (e) => {
 
-  this.setState({ show:!this.state.show})
-}
+    this.setState(
+      {
+        show: !this.state.show,
+        getInfo: e
+      }
+    )
+
+  }
 
 
   render() {
     return (
       <div>
         <Header />
-        <Main jsonData1={this.state.data} showFunc={this.handleModel}/>
-        <SelectedBeast showMyModal={this.state.show} notShow={this.handleModel} />
+        <Main jsonData1={this.state.data} showFunc={this.handleModel} />
+        <SelectedBeast showMyModal={this.state.show} notShow={this.handleModel} hornedInfo={this.state.getInfo}  />
         <Footer />
       </div>
     );
