@@ -1,29 +1,29 @@
 import React from 'react';
-import HornedBeast from './HornedBeasts';
-import Modal from 'react-bootstrap/Modal';
-
+import {Modal,Button} from 'react-bootstrap';
+import CardsGroup from './CardsGroup';
 
 class SelectedBeast extends React.Component {
 
-constructor(props){
-    super(props)
-
-    this.state ={
-        show:false
-    }
-}
-
-handleModel = ()=>{
-
-    this.setState({show:!this.state.show})
-}
-
+ 
+ 
+  
 
     render() {
 
-        return <Modal size="lg" aria-labelledby="contained-modal-title-vcenter" centered show={this.state.show} giveMeModal={this.handleModel} >      
-            <HornedBeast />
-        </Modal>
+        return <Modal show={this.props.showMyModal} onHide={this.props.notShow} >
+        <Modal.Header closeButton>
+          <Modal.Title>{this.props.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body><img variant="top" src={this.props.imgUrl}  alt={this.props.title} title={this.props.title} />  
+        
+        <h1>{this.props.disc}</h1>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={this.props.notShow}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
     }
 
