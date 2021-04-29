@@ -20,6 +20,7 @@ class HornedBeast extends React.Component {
     }
 
     showTheModal = ()=>{
+        // console.log(this.props);
         this.props.show(this.props)
     }
 

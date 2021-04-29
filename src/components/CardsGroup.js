@@ -9,14 +9,14 @@ class CardsGroup extends React.Component {
 
 
     render() {
-
-        return this.props.jsonData1.map(element => {
+        return this.props.myState.map(element => {
             return <HornedBeast
             
                 title={element.title}
                 imgUrl={element.image_url}
                 disc={element.description}
                 show={this.props.show}
+                
                 
             />
         });

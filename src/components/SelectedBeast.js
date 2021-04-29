@@ -1,6 +1,5 @@
 import React from 'react';
 import {Modal,Button} from 'react-bootstrap';
-import CardsGroup from './CardsGroup';
 
 class SelectedBeast extends React.Component {
 
