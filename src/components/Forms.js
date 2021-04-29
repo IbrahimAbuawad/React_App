@@ -14,20 +14,11 @@ class Forms extends React.Component {
           newBeastArray = jsonData.filter(element => { return (Number(element.horns) === optionValue); });
 
           this.props.myState(newBeastArray);
-            // this.props.myState(newBeastArray);
-
-            // this.setState({
-            //     : newBeastArray
-
-            // });
+       
         }
-        // else {
-        //     this.props.myState(jsonData);
-            // this.setState({
-            //     filterForm: jsonData
-
-            // });
-        // }
+        else {
+            this.props.myState(jsonData);
+        }
     }
 
 
