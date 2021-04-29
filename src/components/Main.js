@@ -2,7 +2,6 @@ import React from 'react';
 import CardsGroup from './CardsGroup';
 import CardGroup from 'react-bootstrap/CardGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form } from 'react-bootstrap';
 
 
 class Main extends React.Component {
